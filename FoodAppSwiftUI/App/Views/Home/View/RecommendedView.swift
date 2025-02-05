@@ -16,7 +16,8 @@ struct RecommendedView: View {
                 placeholder: {
                     ProgressView()
                 }
-            ).frame(width: 60, height: 60)//.background(.red)
+            )
+            .frame(width: 60, height: 60)
 
             VStack(alignment: .leading, spacing: 4) {
                 Text("Breakfast")
@@ -44,24 +45,24 @@ struct RecommendedView: View {
 
                     Image(systemName: "bell")
                     Text("4 Serving")
-                    // Spacer()
+                    
                 }
                 .font(.caption2)
                 .foregroundColor(.gray)
-            }//.background(.red)
+            }
 
             Spacer()
 
             VStack {
                 Image(systemName: "heart")
                 Spacer()
-            }.frame(maxHeight: .infinity)
-
-            // .multilineTextAlignment(.top)
+            }
+            .frame(maxHeight: .infinity)
 
         }
         .padding()
         .frame(maxWidth: .infinity)
-        .background(Color(UIColor.systemBackground))        .cornerRadius(20)
+        .background(Color(UIColor.systemBackground))
+        .cornerRadius(20)
     }
 }

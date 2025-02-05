@@ -5,7 +5,9 @@ struct CategoryView: View {
     let dish: DishCategory
 
     var body: some View {
-        VStack(alignment: .center, spacing: 16) {
+        VStack(alignment: .center,
+               spacing: 16) {
+            
             AsyncImage(
                 url: URL(string: dish.image)!,
                 content: { image in

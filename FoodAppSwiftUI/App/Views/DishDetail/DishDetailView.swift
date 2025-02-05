@@ -19,7 +19,7 @@ struct DishDetailView: View {
                         .foregroundColor(.pink)
                 }
                 
-                Text("By Yogesh Patel")
+                Text("By Ahmet")
                     .font(.callout)
                     .foregroundColor(.secondary)
                 
@@ -86,7 +86,7 @@ struct DishDetailView: View {
             
             VStack(alignment: .leading, spacing: 16) {
                 
-                Text("Descrption")
+                Text("Description")
                     .font(.title3)
                     .fontWeight(.semibold)
                 

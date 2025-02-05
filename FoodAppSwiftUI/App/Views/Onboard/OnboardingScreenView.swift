@@ -43,7 +43,4 @@ struct OnboardingScreenView: View {
         }
     }
 }
-//
-//#Preview {
-//    OnboardingScreenView(showOnboarding: .constant(true))
-//}
+

@@ -1,15 +1,16 @@
 import SwiftUI
 
 struct ErrorView: View {
-
+    
     let message: String
     var onRetry: (() -> Void)?
-
-    init(_ message: String, onRetry: (() -> Void)? = nil) {
+    
+    init(_ message: String,
+         onRetry: (() -> Void)? = nil) {
         self.message = message
         self.onRetry = onRetry
     }
-
+    
     var body: some View {
         VStack(spacing: 16) {
             Image(systemName: "exclamationmark.triangle")
@@ -24,7 +25,7 @@ struct ErrorView: View {
                     }
                 }.buttonStyle(.bordered)
             }
-
+            
         }.padding(20)
     }
 }
